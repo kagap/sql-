@@ -30,10 +30,19 @@ A set of 14 interactive Jupyter Notebook modules for learning SQL with PostgreSQ
 1. Clone the repository:
    ```bash
    git clone https://github.com/kagap/sql-.git
+   cd sql-
    ```
-2. Make sure you have PostgreSQL installed and running locally.
-3. Open the notebooks in Jupyter (or VS Code / JupyterLab):
+2. Start a local PostgreSQL instance with Docker:
+   ```bash
+   docker compose up -d
+   ```
+   This spins up Postgres on `localhost:5432` with database `sql_course`, user `postgres`, password `course123` — the exact connection string every notebook uses. No Docker? Install PostgreSQL yourself and create a matching `sql_course` database instead.
+3. Install the Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Launch Jupyter:
    ```bash
    jupyter notebook
    ```
-4. Pick your language folder ([`EN`](EN) or [`PL`](PL)) and start with Module 1.
+5. Pick your language folder ([`EN`](EN) or [`PL`](PL)) and start with Module 1. Each notebook's setup cell (re)creates the tables it needs, so modules can be run in any order.

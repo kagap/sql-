@@ -1,0 +1,5 @@
+jupyter
+ipython-sql
+psycopg2-binary
+pandas
+sqlalchemy

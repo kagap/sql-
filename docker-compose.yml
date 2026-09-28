@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: sql-course-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: course123
+      POSTGRES_DB: sql_course
+    ports:
+      - "5432:5432"
+    volumes:
+      - sql_course_data:/var/lib/postgresql/data
+
+volumes:
+  sql_course_data:
