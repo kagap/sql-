@@ -46,3 +46,9 @@ A set of 14 interactive Jupyter Notebook modules for learning SQL with PostgreSQ
    jupyter notebook
    ```
 5. Pick your language folder ([`EN`](EN) or [`PL`](PL)) and start with Module 1. Each notebook's setup cell (re)creates the tables it needs, so modules can be run in any order.
+
+## 🔗 Course series
+
+Part of a five-course series: [python-starter-pack](https://github.com/kagap/python-starter-pack) → [sql-](https://github.com/kagap/sql-) → [statistic](https://github.com/kagap/statistic) → [pyspark](https://github.com/kagap/pyspark) → [airflow](https://github.com/kagap/airflow) (the last one in Polish only).
+
+After the course, practice on real datasets: the plain-SQL case studies in [python_project](https://github.com/kagap/python_project/tree/main/mini_projects) (SQLite; window functions, recursive CTEs, gaps and islands), rendered with results on [kagap.github.io/sql.html](https://kagap.github.io/sql.html).
